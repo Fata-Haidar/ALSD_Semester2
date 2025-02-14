@@ -10,7 +10,10 @@ public class Praktikum_Array {
         int[] nilaiAngka = new int[matkul.length];
         String[] nilaiHuruf = new String[matkul.length];
         double[] bobotNilai= new double[matkul.length];
+        int[] sks= {2,2,2,3,2,2,3,2};
         double ip=0;
+        double totalBobot=0;
+        int totalSks=0;
         for (int j = 0; j < matkul.length; j++) {
             System.out.print("Masukkan nilai Angka untuk MK "+matkul[j]+" : ");
             nilaiAngka[j] = sc.nextInt(); 
@@ -36,9 +39,10 @@ public class Praktikum_Array {
                 nilaiHuruf[j] ="E";
                 bobotNilai[j] =1.00;
             }  
-            ip+=bobotNilai[j];
+            totalBobot+=bobotNilai[j]*sks[j];
+            totalSks+=sks[j];
         }
-        ip/=8;
+        ip=totalBobot/totalSks;
         System.out.println("=======================");
         System.out.println("hasil Konversi Nilai");
         System.out.println("=======================");
