@@ -3,14 +3,16 @@ public class Praktikum_Perulangan {
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        System.out.print("Input NIM: ");
+        System.out.print("Masukkan NIM: ");
         String nim = sc.nextLine();
+        System.out.println("=======================");
         String nim2 = nim.substring(nim.length() - 2);
         int angkaInt = Integer.parseInt(nim2);
         if (angkaInt < 10) {
             angkaInt+=10;
             
         }
+        System.out.println("n : "+angkaInt); 
         for (int i = 1; i <= angkaInt; i++) {
             if (i==6||i==10) {
                 continue;
