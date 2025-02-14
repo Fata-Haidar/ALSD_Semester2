@@ -4,16 +4,15 @@ public class Praktikum_Perulangan {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.print("Masukkan NIM: ");
-        String nim = sc.nextLine();
+        Long nim = sc.nextLong();
         System.out.println("=======================");
-        String nim2 = nim.substring(nim.length() - 2);
-        int angkaInt = Integer.parseInt(nim2);
-        if (angkaInt < 10) {
-            angkaInt+=10;
+        long angka = nim%100;
+        if (angka < 10) {
+            angka+=10;
             
         }
-        System.out.println("n : "+angkaInt); 
-        for (int i = 1; i <= angkaInt; i++) {
+        System.out.println("n : "+angka); 
+        for (int i = 1; i <= angka; i++) {
             if (i==6||i==10) {
                 continue;
             }
