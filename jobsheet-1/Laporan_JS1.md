@@ -71,49 +71,49 @@ Solusi ini diimplementasikan dalam Tugas1_JS1_09.java, dan berikut ini adalah ta
 
 ## 2.1.6. tugas 2
 
-Solusi ini diimplementasikan dalam tugas2.java, dan berikut ini adalah tangkapan layar hasilnya.
+Solusi ini diimplementasikan dalam Tugas2_JS1_09.java, dan berikut ini adalah tangkapan layar hasilnya.
 
-![Screenshot](/Jobaheet1/img/tugas2.png)
+![Screenshot](img/t2.png)
 
 **Penjelasan singkat:** Ada 5 langkah utama:
-1. Menampilkan Menu Pilihan
-    Menggunakan fungsi tampilkanMenu() untuk menampilkan pilihan perhitungan:
-    Volume kubus
-    Luas permukaan kubus
-    Keliling kubus
-    Keluar (opsi 0)
-2. Menerima Input dari Pengguna
-    Menggunakan Scanner untuk membaca input pilihan menu (1-3 atau 0 untuk keluar).
-    Jika pengguna memilih 0, program akan menampilkan pesan "Terima kasih!" lalu berhenti (break).
-    Jika pengguna memilih 1-3, program meminta panjang sisi kubus.
-
-3. Melakukan Perhitungan Sesuai Pilihan
+1. Menampilkan Menu Pilihan berupa:
+    1.Volume kubus
+    2.Luas permukaan kubus
+    3.Keliling kubus
+    4.Keluar 
+2. Menerima Input pilihan menu
+3. Menerima Input dalam menentukan panjang sisi kubus
+4. Melakukan Perhitungan Sesuai Pilihan
     Case 1 → Memanggil hitungVolume(sisi) untuk menghitung volume kubus.
     Case 2 → Memanggil hitungLuasPermukaan(sisi) untuk menghitung luas permukaan kubus.
     Case 3 → Memanggil hitungKeliling(sisi) untuk menghitung keliling kubus.
     Default Case → Menampilkan pesan "Pilihan tidak valid." jika input tidak sesuai.
-
-4. Fungsi Perhitungan Kubus
-    hitungVolume(sisi) = sisi³
-    hitungLuasPermukaan(sisi) = 6 × sisi²
-    hitungKeliling(sisi) = 12 × sisi
-    Looping (Perulangan) dengan while (true)
-
-5. Program terus berjalan sampai pengguna memilih 0 untuk keluar.
+5. Program terus berjalan sampai user memilih 4 untuk keluar.
 
 ## 2.1.7. tugas3
 
-Solusi ini diimplementasikan dalam tugas3.java, dan berikut ini adalah tangkapan layar hasilnya.
+Solusi ini diimplementasikan dalam Tugas3_JS1_09.java, dan berikut ini adalah tangkapan layar hasilnya.
 
-![Screenshot](/Jobaheet1/img/fungsi.png)
+![Screenshot](img/t3_1.png)
+![Screenshot](img/t3_2.png)
+![Screenshot](img/t3_3.png)
 
-**Penjelasan singkat:** Ada 6 langkah utama:
-1. Deklarasi Harga Bunga
-2. Inisialisasi Stok Bunga
-3. Pengurangan Stok Akibat Kerusakan
-4. Menghitung dan Menampilkan Pendapatan Setiap Cabang
-5. Menghitung Total Stok di Semua Cabang
-6. Memperbarui Stok RoyalGarden 4
+**Penjelasan singkat:** Ada 5 langkah utama:
+1. Input Jumlah Data Mata Kuliah
+2. Input Data Mata Kuliah, berupa Nama Mata Kuliah, Jumlah SKS, Semester ke, Hari Kuliah 
+3. Menampilkan Menu Jadwal Kuilah, berupa:
+    1.Tampilkan Seluruh Jadwal Kuliah 
+    2.Tampilkan Jadwal Kuliah Berdasarkan Hari Tertentu
+    3.Tampilkan Jadwal Kuliah Berdasarkan Semester Tertentu
+    4.Cari Mata Kuliah Berdasarkan Nama Mata Kuliah
+    5.Keluar
+4. Melakukan proses Sesuai Pilihan
+    Case 1 → tampilkanSeluruhJadwal() untuk menampilkan seluruh jadwal.
+    Case 2 → Memanggil tampilkanHari(sc) untuk mencari dan menampilkan jadwal mata kuliah sesuai hari yang di inputkan. Juga terdapat validasi apabila input yang di masukkan salah atau data tidak ditemukan.
+    Case 3 → Memanggil tampilkanSemester(sc) untuk mencari dan menampilkan jadwal mata kuliah sesuai semester yang di inputkan. Juga terdapat validasi apabila input yang di masukkan salah atau data tidak ditemukan.
+    Case 4 → Memanggil cariMataKuliah(sc) untuk mencari dan menampilkan informasi data jadwal kuliah sesuai dengan Nama Mata Kuliah yang di inputkan. Juga terdapat validasi apabila input yang di masukkan salah atau data tidak ditemukan.
+    Default Case → Menampilkan pesan "Pilihan tidak valid." jika input tidak sesuai.
+5. Program terus berjalan sampai user memilih 5 untuk keluar.
 
 
 
