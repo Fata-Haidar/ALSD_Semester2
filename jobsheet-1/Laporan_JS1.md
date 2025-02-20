@@ -49,29 +49,25 @@ Solusi ini diimplementasikan dalam Praktikum_Array.java, dan berikut ini adalah 
 
 ## 2.1.4. Solusi fungsi
 
-Solusi ini diimplementasikan dalam fungsi.java, dan berikut ini adalah tangkapan layar hasilnya.
+Solusi ini diimplementasikan dalam Praktiku_Fungsi.java, dan berikut ini adalah tangkapan layar hasilnya.
 
-![Screenshot](/Jobaheet1/img/fungsi.png)
+![Screenshot](img/P_fungsi.png)
 
-**Penjelasan singkat:** Ada 6 langkah utama:
-1. Deklarasi Harga Bunga
-2. Inisialisasi Stok Bunga
-3. Pengurangan Stok Akibat Kerusakan
-4. Menghitung dan Menampilkan Pendapatan Setiap Cabang
-5. Menghitung Total Stok di Semua Cabang
-6. Memperbarui Stok RoyalGarden 4
+**Penjelasan singkat:** Ada 3 langkah utama:
+1. Menampilkan total pendapatan setiap cabang Royal Garden
+2. Menampilkan Stok Bunga Royal Garden 4
+3. Menghitung dan Menampilkan Pengurangan Stok Bunga Akibat Bunga yang Mati
 
 ## 2.1.5. tugas 1
 
-Solusi ini diimplementasikan dalam tugas1.java, dan berikut ini adalah tangkapan layar hasilnya.
+Solusi ini diimplementasikan dalam Tugas1_JS1_09.java, dan berikut ini adalah tangkapan layar hasilnya.
 
-![Screenshot](/Jobaheet1/img/tugas1.png)
+![Screenshot](img/t1.png)
 
-**Penjelasan singkat:** Ada 4 langkah utama:
-1. Deklarasi Array Kode Plat dan Kota
-2. Input dari Pengguna
-3. Mencari Kota Berdasarkan Kode Plat
-4. Menangani Kode Plat yang Tidak Ditemukan
+**Penjelasan singkat:** Ada 3 langkah utama:
+1. Input Kode plat Nomor
+2. Mencari dan Menampilkan Kota Berdasarkan Kode Plat Nomor
+3. Menangani Kode Plat Nomor yang Tidak Ditemukan dan Meminta Input Ulang
 
 ## 2.1.6. tugas 2
 

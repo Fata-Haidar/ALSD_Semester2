@@ -29,52 +29,63 @@ public class Tugas1_JS1_09 {
                 s=false;
                 break;
             case 'B':
+            System.out.print("Kota: ");
             for (int i = 0; i < kota[0].length; i++) {
                 System.out.print(kota[1][i]);
             }
             s=false;
                 break;
             case 'D':
+            System.out.print("Kota: ");
             for (int i = 0; i < kota[0].length; i++) {
                 System.out.print(kota[2][i]);
             }
+            s=false;
                 break;
             case 'E':
+            System.out.print("Kota: ");
             for (int i = 0; i < kota[0].length; i++) {
                 System.out.print(kota[3][i]);
             }
             s=false;
                 break;
             case 'F':
+            System.out.print("Kota: ");
             for (int i = 0; i < kota[0].length; i++) {
                 System.out.print(kota[4][i]);
             }
             s=false;
                 break;
             case 'G':
+            System.out.print("Kota: ");
             for (int i = 0; i < kota[0].length; i++) {
                 System.out.print(kota[5][i]);
             }
+            s=false;
                 break;
             case 'H':
+            System.out.print("Kota: ");
             for (int i = 0; i < kota[0].length; i++) {
                 System.out.print(kota[6][i]);
             }
             s=false;
                 break;
             case 'L':
+            System.out.print("Kota: ");
             for (int i = 0; i < kota[0].length; i++) {
                 System.out.print(kota[7][i]);
             }
             s=false;
                 break;
             case 'N':
+            System.out.print("Kota: ");
             for (int i = 0; i < kota[0].length; i++) {
                 System.out.print(kota[8][i]);
             }
             s=false;
                 break;
             case 'T':
+            System.out.print("Kota: ");
             for (int i = 0; i < kota[0].length; i++) {
                 System.out.print(kota[9][i]);
             } 
@@ -83,7 +94,7 @@ public class Tugas1_JS1_09 {
           
             default:
             
-                System.out.println("Nomor Tidak ditemukan, Harap Input Ulang.");
+                System.out.println("Kode Plat Nomor Tidak ditemukan, Harap Input Ulang.");
                 
               
       }
