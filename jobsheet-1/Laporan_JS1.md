@@ -4,7 +4,7 @@
 | NIM |  244107020108|
 | Nama |  Fata Haidar Aly |
 | Kelas | TI - 1H |
-| Repository | [link] (https://github.com/Ahmad-Zainudin-Fanani/ALSD_1) |
+| Repository | [link] (https://github.com/Fata-Haidar/ALSD_Semester2) |
 
 # JOBSHEET 1
 
@@ -12,9 +12,9 @@
 
 ## 2.1.1. Solusi Pemilihan
 
-Solusi ini diimplementasikan dalam Pemilihan1.java, dan berikut ini adalah tangkapan layar hasilnya.
+Solusi ini diimplementasikan dalam Praktikum_Pemilihan.java, dan berikut ini adalah tangkapan layar hasilnya.
 
-![Screenshot](/Jobaheet1/img/pemilhan.png)
+![Screenshot](img/pemilihan.png)
 
 **Penjelasan singkat:** Ada 4 langkah utama:
 1. Masukkan semua nilai
@@ -24,26 +24,27 @@ Solusi ini diimplementasikan dalam Pemilihan1.java, dan berikut ini adalah tangk
 
 ## 2.1.2. Solusi Perulangan
 
-Solusi ini diimplementasikan dalam Perulangan.java, dan berikut ini adalah tangkapan layar hasilnya.
+Solusi ini diimplementasikan dalam Praktikum_Perulangan.java, dan berikut ini adalah tangkapan layar hasilnya.
 
-![Screenshot](/Jobaheet1/img/perulangan.png)
+![Screenshot](img/P_perulangan.png)
 
 **Penjelasan singkat:** Ada 5 langkah utama:
 1. input nim
-2. mengambil 2 digit terakhir
-3. apabila 2 digit angka akhir kurang dari 10 maka akan ditambah 10
-4. mengkonversi angka ganjil menjadi *
-5. mengkonversi angka 6 dan 10 menjadi *
+2. mengambil 2 digit angka terakhir = n
+3. apabila n kurang dari 10 maka n akan ditambah 10
+4. mengubah output angka 6 dan 10 menjadi *
+5. mengubah output angka ganjil menjadi *
+
 
 ## 2.1.3. Solusi array
 
-Solusi ini diimplementasikan dalam array.java, dan berikut ini adalah tangkapan layar hasilnya.
+Solusi ini diimplementasikan dalam Praktikum_Array.java, dan berikut ini adalah tangkapan layar hasilnya.
 
-![Screenshot](/Jobaheet1/img/array.png)
+![Screenshot](img/array.png)
 
 **Penjelasan singkat:** Ada 3 langkah utama:
-1. Input Nilai
-2. Konversi Nilai
+1. Input Nilai Angka 
+2. Konversi Nilai Angka ke Nilai Huruf dan Bobot Nilai
 3. Menghitung IP (Indeks Prestasi)
 
 ## 2.1.4. Solusi fungsi

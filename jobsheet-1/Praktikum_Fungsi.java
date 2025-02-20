@@ -37,17 +37,21 @@ public class Praktikum_Fungsi {
     
     }
     static void kurangiStockKarenaMati(int index) {
-        int[] bungaMati = {1, 2, 0, 5};  
+        int[] bungaMati = {1, 2, 0, 5};
+        int [] muatan = new int[4];
+        System.out.println("\n========================================");  
+        System.out.println("Pengurangan stock akibat bunga yang mati");
+        System.out.println("========================================");
         for (int i = 0; i < stockBunga.length; i++) {
             for (int j = 0; j < stockBunga[i].length; j++) {
-                stockBunga[i][j] -= bungaMati[j];  
+                 muatan[j] = stockBunga[i][j] - bungaMati[j];  
             }
         }
         System.out.println("\n==== Stok Bunga di " + cabang[index] + " ====");
         for (int i = 0; i < stockBunga.length; i++) {
-                System.out.println(jenisBunga[i] + " : " + stockBunga[index][i]);  
+                System.out.println(jenisBunga[i] + " : " + stockBunga[index][i]+"-"+bungaMati[i]+" = "+muatan[i]);  
     }
-    System.out.println("Pengurangan stock akibat bunga yang mati");
+    
 } 
 }
    
