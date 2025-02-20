@@ -84,9 +84,13 @@ Solusi ini diimplementasikan dalam Tugas2_JS1_09.java, dan berikut ini adalah ta
 2. Menerima Input pilihan menu
 3. Menerima Input dalam menentukan panjang sisi kubus
 4. Melakukan Perhitungan Sesuai Pilihan
+    
     Case 1 → Memanggil hitungVolume(sisi) untuk menghitung volume kubus.
+    
     Case 2 → Memanggil hitungLuasPermukaan(sisi) untuk menghitung luas permukaan kubus.
+    
     Case 3 → Memanggil hitungKeliling(sisi) untuk menghitung keliling kubus.
+    
     Default Case → Menampilkan pesan "Pilihan tidak valid." jika input tidak sesuai.
 5. Program terus berjalan sampai user memilih 4 untuk keluar.
 
@@ -102,16 +106,26 @@ Solusi ini diimplementasikan dalam Tugas3_JS1_09.java, dan berikut ini adalah ta
 1. Input Jumlah Data Mata Kuliah
 2. Input Data Mata Kuliah, berupa Nama Mata Kuliah, Jumlah SKS, Semester ke, Hari Kuliah 
 3. Menampilkan Menu Jadwal Kuilah, berupa:
+   
     1.Tampilkan Seluruh Jadwal Kuliah 
+   
     2.Tampilkan Jadwal Kuliah Berdasarkan Hari Tertentu
+   
     3.Tampilkan Jadwal Kuliah Berdasarkan Semester Tertentu
+   
     4.Cari Mata Kuliah Berdasarkan Nama Mata Kuliah
+   
     5.Keluar
 4. Melakukan proses Sesuai Pilihan
+   
     Case 1 → tampilkanSeluruhJadwal() untuk menampilkan seluruh jadwal.
+    
     Case 2 → Memanggil tampilkanHari(sc) untuk mencari dan menampilkan jadwal mata kuliah sesuai hari yang di inputkan. Juga terdapat validasi apabila input yang di masukkan salah atau data tidak ditemukan.
+    
     Case 3 → Memanggil tampilkanSemester(sc) untuk mencari dan menampilkan jadwal mata kuliah sesuai semester yang di inputkan. Juga terdapat validasi apabila input yang di masukkan salah atau data tidak ditemukan.
+    
     Case 4 → Memanggil cariMataKuliah(sc) untuk mencari dan menampilkan informasi data jadwal kuliah sesuai dengan Nama Mata Kuliah yang di inputkan. Juga terdapat validasi apabila input yang di masukkan salah atau data tidak ditemukan.
+   
     Default Case → Menampilkan pesan "Pilihan tidak valid." jika input tidak sesuai.
 5. Program terus berjalan sampai user memilih 5 untuk keluar.
 
