@@ -15,3 +15,4 @@ public class MahasiswaMain09 {
     mhs2.updateIPK(3.30);
     mhs2.tampilkanInformasi();
     }
+}
