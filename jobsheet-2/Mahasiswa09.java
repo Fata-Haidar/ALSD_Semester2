@@ -36,5 +36,13 @@ String nilaiKerja(){
         return "Kinerja kurang";
     }
 }
+public Mahasiswa09(){
+}
+public Mahasiswa09(String nm, String nim, double ipk, String kls){
+    nama = nm ;
+    this.nim = nim;
+    this.ipk = ipk;
+    kelas = kls;
+}
     
 }
