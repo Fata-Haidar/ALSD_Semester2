@@ -16,7 +16,5 @@ public class MahasiswaMain09 {
     mhs2.tampilkanInformasi();
     Mahasiswa09 mhsFata = new Mahasiswa09("Fata Haidar Aly","244107020108",3.50,"TI 1H");
     mhsFata.tampilkanInformasi();
-    Mahasiswa09 mhsF = new Mahasiswa09("Fata Haidar Aly","244107020108",3.50,"TI 1H");
-    mhsF.tampilkanInformasi();
     }
 }
