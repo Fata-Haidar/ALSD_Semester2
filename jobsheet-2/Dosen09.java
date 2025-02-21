@@ -1,14 +1,17 @@
-public class MataKuliah09 {
-    String kodeMK;
+public class Dosen09 {
+
+    String idDosen;
     String nama;
-    int sks;
-    int jumlahJam;
+    String bidangKeahlian;
+    int tahunGabung;
+    boolean statusAktif;
 
     void tampilInformasi(){
-        System.out.println("Kode Mata KUliah: "+ kodeMK);
+        System.out.println("ID Dosen: "+ idDosen);
         System.out.println("Nama: "+ nama);
-        System.out.println("SKS: "+ sks);
-        System.out.println("Jumlah: "+ jumlahJam);
+        System.out.println("Status Aktif: "+ statusAktif);
+        System.out.println("Tahun Gabung: "+ tahunGabung);
+        System.out.println("Bidang Keahlian: "+ bidangKeahlian);
         System.out.println("----------------------------------");
     }
     void ubahSKS(int sksBaru){
@@ -26,13 +29,13 @@ public class MataKuliah09 {
             System.out.println("Pengurangan Tidak Dapat Dilakukan");
         }
     }
-    public MataKuliah09(String kMK, String nm, int sks, int jJ){
+    public Dosen09(String kMK, String nm, int sks, int jJ){
         kodeMK = kMK ;
         this.nama = nm;
         this.sks = sks;
         jumlahJam = jJ;
     }
-    public MataKuliah09(){
+    public Dosen09(){
         
     }
 }
