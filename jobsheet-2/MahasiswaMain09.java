@@ -11,3 +11,4 @@ public class MahasiswaMain09 {
     mhs1.updateIPK(3.60);
     mhs1.tampilkanInformasi();
     }
+}
