@@ -9,31 +9,28 @@ public class Dosen09 {
     void tampilInformasi(){
         System.out.println("ID Dosen: "+ idDosen);
         System.out.println("Nama: "+ nama);
-        System.out.println("Status Aktif: "+ statusAktif);
+        System.out.println("Status Aktif: "+(statusAktif ? "Aktif" : "Tidak Aktif"));
         System.out.println("Tahun Gabung: "+ tahunGabung);
         System.out.println("Bidang Keahlian: "+ bidangKeahlian);
         System.out.println("----------------------------------");
     }
-    void ubahSKS(int sksBaru){
-            sks = sksBaru;
-            System.out.println("SKS Telah Diubah");
+    void setStatusAktif(boolean status){
+            this.statusAktif=status;
     
     }
-    void tambahJam(int jam){
-        jumlahJam+=jam;
+    void ubahKeahlian(String bidang){
+        this.bidangKeahlian=bidang;
     }
-    void kurangiJam(int jam){
-        if (jam<= jumlahJam) {
-            jumlahJam-=jam;
-        }else{
-            System.out.println("Pengurangan Tidak Dapat Dilakukan");
-        }
+    int hitungMasaKerja(int thnSekarang){
+      return thnSekarang-this.tahunGabung;
+       
     }
-    public Dosen09(String kMK, String nm, int sks, int jJ){
-        kodeMK = kMK ;
+    public Dosen09(String idD, String nm,boolean sA,String bidang ,int thnGB){
+        idDosen = idD ;
         this.nama = nm;
-        this.sks = sks;
-        jumlahJam = jJ;
+        this.statusAktif= sA;
+        tahunGabung=thnGB;
+        this.bidangKeahlian=bidang;
     }
     public Dosen09(){
         
