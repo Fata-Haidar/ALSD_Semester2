@@ -1,4 +1,4 @@
-public class MahasiswaDemo09 {p
+public class MahasiswaDemo09 {
     public static void main(String[] args) {
         Mahasiswa09[] arrayOfMahasiswa09 = new Mahasiswa09[3];
 arrayOfMahasiswa09[0] = new Mahasiswa09(); 
