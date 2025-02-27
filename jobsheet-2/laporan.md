@@ -82,98 +82,103 @@ Memanggil method dengan nama objek dan dihubungkan dengan operator titik(.).
 
     * Pemanggilan tampilkanInformasi() kedua menampilkan perubahan tersebut, sehingga hasil outputnya berbeda.
 
-## 2.1.3. Solusi array
+## 2.1.3. Solusi Membuat Konstruktor 
 
-Solusi ini diimplementasikan dalam Praktikum_Array.java, dan berikut ini adalah tangkapan layar hasilnya.
+Solusi ini diimplementasikan dalam MahasiswaMain09.java, dan berikut ini adalah tangkapan layar hasilnya.
 
-![Screenshot](img/array.png)
+![Screenshot](img/m8.png)
 
-**Penjelasan singkat:** Ada 3 langkah utama:
-1. Input Nilai Angka 
-2. Konversi Nilai Angka ke Nilai Huruf dan Bobot Nilai
-3. Menghitung IP (Indeks Prestasi)
+**Penjelasan singkat:** Ada 6 langkah utama:
+1. Intansiasi object (mhs1) dengan constructor default Mahasiswa09().
+2. Intansiasi object (mhs2) dengan constructor berparameter Mahasiswa09(nama, nim, ipk, kelas).
+3. Mengakses atribut nama, nim, kelas, ipk.
+4. Mengubah kelas dengan megakses Method ubahKelas().
+5. Memperbarui IPK dengan megakses Method updateIPK().
+6. Menampilkan Informasi mahasiswa atau object.
 
-## 2.1.4. Solusi fungsi
+**Jawab Pertanyaan**
+1. Baris kode yang digunakan untuk mendeklarasikan konstruktor berparameter dalam class Mahasiswa09 adalah: 
+![Screenshot](img/m10.png)
+Konstruktor ini memungkinkan pembuatan objek mhs2 dengan parameter yang diberikan.
+2. * Membuat objek baru mhs2 dari class Mahasiswa09.
+    * Memanggil konstruktor berparameter yang mengisi atribut nama, nim, ipk, dan kelas dengan nilai:
 
-Solusi ini diimplementasikan dalam Praktiku_Fungsi.java, dan berikut ini adalah tangkapan layar hasilnya.
+        nama = "Annisa Nabila"
 
-![Screenshot](img/P_fungsi.png)
+        nim = "2141720160"
 
-**Penjelasan singkat:** Ada 3 langkah utama:
-1. Menampilkan total pendapatan setiap cabang Royal Garden
-2. Menampilkan Stok Bunga Royal Garden 4
-3. Menghitung dan Menampilkan Pengurangan Stok Bunga Akibat Bunga yang Mati
+        ipk = 3.25
 
-## 2.1.5. tugas 1
+        kelas = "TI 2L"
+3. ![Screenshot](img/m11.png)
+hasilnya akan terjadi error, karena tidak ada lagi konstruktor default dalam class Mahasiswa09. Java. Karena Java tidak secara otomatis menyediakan konstruktor default jika ada konstruktor berparameter yang dideklarasikan. Jika ingin tetap menggunakan objek mhs1, kita harus menambahkan kembali konstruktor default atau selalu menggunakan konstruktor berparameter.
+4. Tidak harus secara berurutan. Dalam OOP (Object-Oriented Programming), method dalam suatu class bisa dipanggil kapan saja selama objek sudah dibuat dan method yang dipanggil tersedia.
+5. Objek (mhsFata)ini dibuat dengan menggunakan konstruktor berparameter, lalu method tampilkanInformasi() dipanggil untuk menampilkan detailnya.
 
-Solusi ini diimplementasikan dalam Tugas1_JS1_09.java, dan berikut ini adalah tangkapan layar hasilnya.
+![Screenshot](img/m12.png)
 
-![Screenshot](img/t1.png)
+![Screenshot](img/m13.png)
 
-**Penjelasan singkat:** Ada 3 langkah utama:
-1. Input Kode plat Nomor
-2. Mencari dan Menampilkan Kota Berdasarkan Kode Plat Nomor
-3. Menangani Kode Plat Nomor yang Tidak Ditemukan dan Meminta Input Ulang
+## 2.1.4. Solusi Tugas 1
 
-## 2.1.6. tugas 2
+Solusi ini diimplementasikan dalam MataKuliah09.java dan MataKuliahMain09, dan berikut ini adalah tangkapan layar hasilnya.
 
-Solusi ini diimplementasikan dalam Tugas2_JS1_09.java, dan berikut ini adalah tangkapan layar hasilnya.
+![Screenshot](img/m14.png)
 
-![Screenshot](img/t2.png)
+**Penjelasan singkat:** class Mahasiswa09 memiliki 4 atribut dan 4 method:
 
-**Penjelasan singkat:** Ada 5 langkah utama:
-1. Menampilkan Menu Pilihan berupa:
-    1.Volume kubus
-    2.Luas permukaan kubus
-    3.Keliling kubus
-    4.Keluar 
-2. Menerima Input pilihan menu
-3. Menerima Input dalam menentukan panjang sisi kubus
-4. Melakukan Perhitungan Sesuai Pilihan
-    
-    Case 1 → Memanggil hitungVolume(sisi) untuk menghitung volume kubus.
-    
-    Case 2 → Memanggil hitungLuasPermukaan(sisi) untuk menghitung luas permukaan kubus.
-    
-    Case 3 → Memanggil hitungKeliling(sisi) untuk menghitung keliling kubus.
-    
-    Default Case → Menampilkan pesan "Pilihan tidak valid." jika input tidak sesuai.
-5. Program terus berjalan sampai user memilih 4 untuk keluar.
+ Atribut:
+1. kodeMK: String 
+2. nama: String  
+3. sks: int 
+4. jumlahJam: int
 
-## 2.1.7. tugas3
+Method:
+1. tampilkanInformasi(): void 
+2. ubahSKS(sksBaru: int): void 
+3. tambahJam(jam: int): void  
+4. kurangiJam(jsm: int): void
 
-Solusi ini diimplementasikan dalam Tugas3_JS1_09.java, dan berikut ini adalah tangkapan layar hasilnya.
+Ada 6 langkah utama:
+1. Intansiasi object (mhs1) dengan constructor default MataKuliah09().
+2. Intansiasi object (mhs2) dengan constructor berparameter MataKuliah09(kMk, nm, sks, jJ).
+3. Mengakses atribut kodeMK, nama, sks, jumlahJam.
+4. Mengubah sks dengan megakses Method ubahSKS(5).
+5. Menambah jumlah jam dengan megakses Method tambahJam(2).
+6. Menambah jumlah jam dengan megakses Method kurangiJam(3) dan kurangiJam(10) .
+6. Menampilkan Informasi matakuliah atau object.
 
-![Screenshot](img/t3_1.png)
-![Screenshot](img/t3_2.png)
-![Screenshot](img/t3_3.png)
 
-**Penjelasan singkat:** Ada 5 langkah utama:
-1. Input Jumlah Data Mata Kuliah
-2. Input Data Mata Kuliah, berupa Nama Mata Kuliah, Jumlah SKS, Semester ke, Hari Kuliah 
-3. Menampilkan Menu Jadwal Kuilah, berupa:
-   
-    1.Tampilkan Seluruh Jadwal Kuliah 
-   
-    2.Tampilkan Jadwal Kuliah Berdasarkan Hari Tertentu
-   
-    3.Tampilkan Jadwal Kuliah Berdasarkan Semester Tertentu
-   
-    4.Cari Mata Kuliah Berdasarkan Nama Mata Kuliah
-   
-    5.Keluar
-4. Melakukan proses Sesuai Pilihan
-   
-    Case 1 → tampilkanSeluruhJadwal() untuk menampilkan seluruh jadwal.
-    
-    Case 2 → Memanggil tampilkanHari(sc) untuk mencari dan menampilkan jadwal mata kuliah sesuai hari yang di inputkan. Juga terdapat validasi apabila input yang di masukkan salah atau data tidak ditemukan.
-    
-    Case 3 → Memanggil tampilkanSemester(sc) untuk mencari dan menampilkan jadwal mata kuliah sesuai semester yang di inputkan. Juga terdapat validasi apabila input yang di masukkan salah atau data tidak ditemukan.
-    
-    Case 4 → Memanggil cariMataKuliah(sc) untuk mencari dan menampilkan informasi data jadwal kuliah sesuai dengan Nama Mata Kuliah yang di inputkan. Juga terdapat validasi apabila input yang di masukkan salah atau data tidak ditemukan.
-   
-    Default Case → Menampilkan pesan "Pilihan tidak valid." jika input tidak sesuai.
-5. Program terus berjalan sampai user memilih 5 untuk keluar.
+
+## 2.1.5. Solusi Tugas 2
+
+Solusi ini diimplementasikan dalam Dosen09.java dan DosenMain09, dan berikut ini adalah tangkapan layar hasilnya.
+
+![Screenshot](img/m15.png)
+
+**Penjelasan singkat:** class Mahasiswa09 memiliki 4 atribut dan 4 method:
+
+ Atribut:
+1. idDosen: String 
+2. nama: String  
+3. statusAktif: boolean 
+4. bidangKeahlian: String
+
+Method:
+1. tampilInformasi(): void  
+2. setStatusAktif(status: boolean): void   
+3. hitungMasaKerja(thnSkrg: int): int  
+4. ubahKeahlian(bidang: String): void 
+
+Ada 6 langkah utama:
+1. Intansiasi object (dosen1) dengan constructor default MataKuliah09().
+2. Intansiasi object (dosen2) dengan constructor berparameter MataKuliah09(idD, nm, sA, thnGB).
+3. Mengakses atribut idDosen, nama, statusAktif, bidangKeahlian.
+4. Mengubah bidangKeahlian dengan megakses Method ubahKeahlian("Sistem Operasi") dan ubahKeahlian("Kecerdasan Buatan").
+5. Menampilkan masa kerja dosen berdasarkan tahun saat ini (2025) dikurangi tahun mulai bekerja.
+6. Merubah statusAktif dengan method setStatusAktif(false).
+7. Menampilkan Informasi Dosen atau object.
+
 
 
 
