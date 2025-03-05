@@ -8,6 +8,12 @@ public class Dosen09 {
         this.nama=nama;
         this.jenisKelamin=jenisKelamin; 
         this.usia=usia;
-        this.kode=kode;
         } 
+        public String toString() {
+            return "Kode            : " + kode + "\n" +
+                   "Nama            : " + nama + "\n" +
+                   "Jenis Kelamin   : " + (jenisKelamin ? "Wanita" : "Pria") + "\n" +
+                   "Usia            : " + usia + "\n" +
+                   "-------------------------------------";
+        }
 }
