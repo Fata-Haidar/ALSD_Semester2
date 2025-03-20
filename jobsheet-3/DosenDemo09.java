@@ -1,6 +1,8 @@
 import java.util.Scanner;
 
+
 public class DosenDemo09 {
+   
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         Dosen09[] arrayOfDosen = new Dosen09[3];
@@ -9,7 +11,7 @@ public class DosenDemo09 {
         Boolean jenisKelamin;
 
         for(int i=0; i < 3; i++) {
-            System.out.println("Masukkan Data Matakuliah ke-" + (i + 1));
+            System.out.println("Masukkan Data Dosen ke-" + (i + 1));
             System.out.print("Kode    : ");
             kode = sc.nextLine();
             System.out.print("Nama    : ");
@@ -24,15 +26,11 @@ public class DosenDemo09 {
 
             arrayOfDosen[i] = new Dosen09(kode, nama, jenisKelamin, usia );
         }
-        
-       
-
-        for (Dosen09 dosen09 : arrayOfDosen) {
-            for (int i = 0; i < arrayOfDosen.length; i++) {
-                System.out.println("Data Dosen ke-" + (i + 1));
-                System.out.println(dosen09);
-            }
-             // Otomatis memanggil toString()
-        }
+        DataDosen09.dataSemuaDosen(arrayOfDosen);
+        DataDosen09.jumlahDosenPerJenisKelamin(arrayOfDosen);
+        DataDosen09.rerataUsiaDosenPerJenisKelamin(arrayOfDosen);
+        DataDosen09.infoDosenPalingTua(arrayOfDosen);
+        DataDosen09.infoDosenPalingMuda(arrayOfDosen);
+      
     }
 }
