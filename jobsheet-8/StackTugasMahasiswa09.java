@@ -55,11 +55,7 @@ public class StackTugasMahasiswa09 {
         }
     }
     public int  jmltgs(){
-        int tmp=0;
-        for (int i = top; i >= 0; i--) {
-            tmp +=1;
-        }
-        return tmp;
+        return top+1;
     }
 
     public void print() {
@@ -68,5 +64,19 @@ public class StackTugasMahasiswa09 {
         }
         System.out.println();
     }
+    public String konversiDesimalKeBiner(int nilai) {
+        StackKonversi stack = new StackKonversi();
+        while (nilai > 0) {
+            int sisa = nilai % 2;
+            stack.push(sisa);
+            nilai = nilai / 2;
+        }
+        String biner = new String();
+        while (!stack.isEmpty()) {
+            biner += stack.pop();
+        }
+        return biner;
+    }
+    
     
 }
